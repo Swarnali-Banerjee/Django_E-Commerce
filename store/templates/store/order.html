@@ -1,0 +1,19 @@
+{% extends "store/main.html" %}
+{% load static %}
+{% block content %}
+
+{% for item in items %}
+<div >
+<div class="cart-row1">
+    <div ><img class="row-image" src="{{item.product.imageURL}}"><p>{{item.product.name}}</p></div>
+ 
+    <div >
+        Quantity :
+        <p class="quantity">{{item.quantity}}</p>
+       
+    </div>
+    
+</div>
+{% endfor %}
+</div>
+{% endblock %}
